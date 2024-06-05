@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 /** @type {import('tailwindcss').Config} */
 const config = {
 	plugins: [require('@tailwindcss/typography'), require('daisyui')],
@@ -11,6 +12,25 @@ const config = {
 		prefix: '', // prefix for daisyUI classnames (components, modifiers and responsive class names. Not colors)
 		logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
 		themeRoot: ':root' // The element that receives theme color CSS variables
+	},
+	theme: {
+		extend: {
+			animation: {
+				'fadeInUp': 'fadeInUp 500ms ease-in-out'
+			},
+			keyframes: {
+				fadeInUp:  {
+					'0%': {
+						transform: 'translateY(10%)',
+						opacity: 0
+					},
+					'100%' : {
+						transform: 'translateY(0%)',
+						opacity: 1
+					}
+				  }
+			}
+		}
 	}
 };
 
