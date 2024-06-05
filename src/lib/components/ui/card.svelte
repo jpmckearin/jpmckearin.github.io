@@ -4,9 +4,11 @@
 </script>
 
 <div class="w-full">
-	<div class="flex flex-col justify-center max-w-xs mx-auto bg-gray-50 shadow-xl rounded-xl p-5">
+	<div
+		class="flex flex-col justify-center max-w-xs mx-auto bg-gray-50 shadow-xl rounded-xl p-5 print:shadow-none"
+	>
 		<div class="avatar mx-auto">
-			<div class="h-32 shadow-xl rounded-full">
+			<div class="h-32 shadow-xl rounded-full print:shadow-none">
 				<img src={profileImage} alt="Profile face" />
 			</div>
 		</div>
@@ -17,7 +19,7 @@
 			>
 				Software Engineering Manager<br />Youth Sports Director & Coach
 			</p>
-			<div class="flex align-center justify-center mt-4">
+			<div class="flex align-center justify-center mt-4 print:hidden">
 				<a
 					class="text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 hover:bg-gray-800 rounded-full hover:text-white transition-colors duration-300"
 					href="https://github.com/jpmckearin"

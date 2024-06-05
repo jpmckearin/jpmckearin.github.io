@@ -1,8 +1,8 @@
 <script lang="ts">
 </script>
 
-<div class="max-w-4xl mx-auto mt-16">
-	<p class="text-2xl md:text-4xl font-bold text-center text-black">Hey There!</p>
+<div class="max-w-4xl mx-auto mt-16 print:mt-0">
+	<p class="text-2xl md:text-4xl font-bold text-center text-black print:hidden">Hey There!</p>
 	<p class="text-base text-left md:text-center text-gray-600 leading-relaxed mt-4">
 		I am a Software Engineering Manager and Youth Sports Director/Coach with a passion for building
 		great products and high performing teams that dominate the competition. I am passionate about

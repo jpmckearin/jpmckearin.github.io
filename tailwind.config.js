@@ -15,6 +15,14 @@ const config = {
 	},
 	theme: {
 		extend: {
+			screens: {
+				print: {
+					raw: 'print'
+				},
+				screen: {
+					raw: 'screen'
+				}
+			},
 			animation: {
 				'fadeInUp': 'fadeInUp 500ms ease-in-out'
 			},
